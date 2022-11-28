@@ -292,7 +292,7 @@ public:
             while (getline(booking_file, line))
             {
                 stringstream sstream(line);
-                //creating a new structor
+                //initializing a new object 
                 Bookings *b = new Bookings;
                 string filler;
                 getline(sstream, filler, ',');
@@ -322,7 +322,11 @@ public:
         return myBookings;
     }
 };
-
+/**
+ * @brief the "fit"-itterator itterates through the flightlist and checks if there is any flights with no bookings.
+ * 
+ * 
+ */
 class ticketManager
 {
 public:
@@ -334,7 +338,7 @@ public:
             if ((*fit)->get_fs() == 0 && (*fit)->get_bs() == 0 && (*fit)->get_es() == 0)
             {
                 ofstream outfile("canceled_flights.txt", ios_base::app);
-
+                // prints out flights that has no bookings in the canceled flights file.
                 if (outfile.is_open())
                 {
                     outfile << "Flight nr " << (*fit)->get_flightno() << " " << (*fit)->get_timestr() << "is canceled" << endl;
@@ -345,6 +349,7 @@ public:
     /**
      * @brief Method that checks the seatclass and allocates a seat
      * 
+     * 
      * @param myFlights 
      * @param myBookings 
      */
@@ -353,7 +358,7 @@ public:
     
         list<Bookings *>::iterator bit;
         list<Flights *>::iterator fit;
-
+        //fit and bit itterators check if there are any bookings that matches flights 
         for (bit = myBookings.begin(); bit != myBookings.end(); ++bit)
         {
             for (fit = myFlights.begin(); fit != myFlights.end(); ++fit)
@@ -369,6 +374,7 @@ public:
                     case 'f':
                         (*fit)->increaseFs();
                         seat = (*fit)->get_fs();
+                        // if a first class seat is found its adds the amount of seats so that the same seats is never booked twice
                         row = seat / 7 + 1;
                         break;
 
@@ -385,6 +391,10 @@ public:
                     default:
                         break;
                     }
+                    /**
+                     * @brief 
+                     * 
+                     */
 
                     char filename[20];
                     sprintf(filename, "ticket-%d.txt", (*bit)->get_bookingsnum());
@@ -406,7 +416,11 @@ public:
         }
     }
 };
-
+/**
+ * @brief Main calls for the classes and initializes the methods
+ * 
+ * @return int 
+ */
 int main()
 {
     flightManager fm;
@@ -421,26 +435,3 @@ int main()
 
     return 0;
 }
-
-    /*
-        void showlist()
-        {
-
-            list<Bookings *>::iterator it;
-            for (it = myBookings.begin(); it != myBookings.end(); ++it)
-            {
-                cout << (*it)->get_dep() << endl;
-            }
-        }
-        */
-
-           /*
-        void showlist()
-        {
-            list<Flights *>::iterator it;
-            for (it = myFlights.begin(); it != myFlights.end(); ++it)
-            {
-                cout << (*it)->get_dep() << endl;
-            }
-        }
-        */
