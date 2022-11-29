@@ -6,9 +6,9 @@
 #include <sstream>
 #include <cstring>
 
-#include "Flight.hh"
+#include "flight.hh"
 #include "bookings.hh"
-#include "TicketManager.hh"
+#include "ticketManager.hh"
 #include "bookingManager.hh"
 
 using namespace std;
