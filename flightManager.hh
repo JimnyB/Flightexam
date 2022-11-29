@@ -13,9 +13,9 @@
 #include <sstream>
 #include <cstring>
 
-#include "Flight.hh"
+#include "flight.hh"
 #include "bookings.hh"
-#include "TicketManager.hh"
+#include "ticketManager.hh"
 
 using namespace std;
 #ifndef FLIGHTMANAGER_CLASS
