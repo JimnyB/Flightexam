@@ -9,7 +9,7 @@
 #include <fstream>
 #include <sstream>
 #include <cstring>
-#include "Flight.hh"
+#include "flight.hh"
 #include "bookings.hh"
 using namespace std;
 
