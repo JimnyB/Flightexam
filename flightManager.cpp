@@ -7,10 +7,10 @@
 #include <sstream>
 #include <cstring>
 
-#include "Flight.hh"
+#include "flight.hh"
 #include "bookings.hh"
 #include "bookingManager.hh"
-#include "FlightManager.hh"
+#include "flightManager.hh"
 
 flightManager::flightManager() {}
 
