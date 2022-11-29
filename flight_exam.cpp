@@ -17,11 +17,11 @@
 #include <cstring>
 #include <unistd.h>
 
-#include "Flight.hh"
+#include "flight.hh"
 #include "bookings.hh"
-#include "FlightManager.hh"
+#include "flightManager.hh"
 #include "bookingManager.hh"
-#include "TicketManager.hh"
+#include "ticketManager.hh"
 
 using namespace std;
 
