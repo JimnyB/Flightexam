@@ -10,10 +10,10 @@
 #include <cstring>
 #include <unistd.h>
 
-#include "Flight.hh"
+#include "flight.hh"
 #include "bookings.hh"
-#include "FlightManager.hh"
-#include "TicketManager.hh"
+#include "flightManager.hh"
+#include "ticketManager.hh"
 
 using namespace std;
 
