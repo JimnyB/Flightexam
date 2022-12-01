@@ -34,6 +34,7 @@ Flight nr 312 07:30 is canceled
 ticket-{bookingnumber}.txt
 
 * Each file should contain the following information in this format:
+
 BOOKING:{bookingnumber} 
 FLIGHT:{flight} DEPARTURE:{dep} DESTINATION: {dest} {date} {time}
 PASSENGER {firstname} {surname}
