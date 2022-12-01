@@ -35,10 +35,10 @@ ticket-{bookingnumber}.txt
 
 * Each file should contain the following information in this format:
 
-BOOKING:{bookingnumber} 
-FLIGHT:{flight} DEPARTURE:{dep} DESTINATION: {dest} {date} {time}
-PASSENGER {firstname} {surname}
-CLASS: {seatclass}
+BOOKING:{bookingnumber} \n
+FLIGHT:{flight} DEPARTURE:{dep} DESTINATION: {dest} {date} {time}\n
+PASSENGER {firstname} {surname}\n
+CLASS: {seatclass}\n
 ROW {row} SEAT {seatnumber}
 
 
