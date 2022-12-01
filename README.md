@@ -18,11 +18,17 @@ Flights without bookings will be canceled and a seperate file with be created co
 ## Formatting example of the tickets that are produced are shown below:
 
 BOOKING:1011
+
 FLIGHT:308
+
 DEPARTURE:GOT
+
 DESTINATION:LGW 2022-10-27 06:30
+
 PASSENGER:Ulf Johansson
+
 CLASS:business
+
 ROW:29    SEAT:200
 
 ## Flights without any bookings will end up in a seperate file, formatting is shown below
@@ -36,9 +42,13 @@ ticket-{bookingnumber}.txt
 ## Each file should contain the following information in this format:
 
 BOOKING:{bookingnumber} 
+
 FLIGHT:{flight} DEPARTURE:{dep} DESTINATION: {dest} {date} {time}\n
+
 PASSENGER {firstname} {surname}
+
 CLASS: {seatclass}
+
 ROW {row} SEAT {seatnumber}
 
 
