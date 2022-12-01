@@ -33,7 +33,7 @@ Flight nr 312 07:30 is canceled
 * The tickets that get produced will have the following format:
 ticket-{bookingnumber}.txt
 
-* Each file should contain the following information in this format:
+## Each file should contain the following information in this format:
 
 BOOKING:{bookingnumber} 
 FLIGHT:{flight} DEPARTURE:{dep} DESTINATION: {dest} {date} {time}\n
