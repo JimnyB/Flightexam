@@ -29,8 +29,9 @@ void ticketManager::canceled_flights(list<Flights *> myFlights)
             ofstream outfile("canceled_flights.txt");
             if (outfile.is_open())
             {
-                outfile << "Flight nr " << (*fit)->get_flightno() << " " << (*fit)->get_timestr() << "is canceled";
+                outfile << "Flight nr " << (*fit)->get_flightno() << " " << (*fit)->get_timestr() << "is canceled" << endl;
             }
+            outfile.close ();
         }
 }
 
